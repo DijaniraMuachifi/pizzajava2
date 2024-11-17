@@ -1,0 +1,21 @@
+<h2>Categories</h2>
+<a href="/categories/add" class="btn btn-primary">Add New Category</a>
+<table class="table mt-3">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="category : ${categories}">
+        <td th:text="${category.cname}"></td>
+        <td th:text="${category.price}"></td>
+        <td>
+            <a th:href="@{'/categories/edit/' + ${category.cname}}" class="btn btn-warning btn-sm">Edit</a>
+            <a th:href="@{'/categories/delete/' + ${category.cname}}" class="btn btn-danger btn-sm">Delete</a>
+        </td>
+    </tr>
+    </tbody>
+</table>

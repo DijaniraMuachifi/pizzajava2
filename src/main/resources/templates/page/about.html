@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PIZZA | HOME PAGE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            padding-top: 56px; /* Add padding to prevent content from hiding under the navbar */
+        }
+        .cover {
+            height: 100vh; /* Ensure it takes 100% of the viewport height */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 20px; /* Space between cards */
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        }
+        .navbar {
+            background-color: #343a40; /* Set navbar background to dark */
+            color: white; /* Ensure text is white */
+        }
+        footer {
+            background-color: #343a40; /* Dark background */
+            color: white; /* Light text */
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Set a fixed height for the card images */
+        .card-img-top {
+            height: 200px; /* Fixed height */
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+        <!-- Logo à esquerda -->
+        <a class="navbar-brand" href="#">PIZZA</a>
+
+
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="/" class="nav-link text-white">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link text-white">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about" class="nav-link text-white">About</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <a href="login" class="nav-link text-white ms-auto">Login</a>
+    </div>
+</nav>
+<!-- About Banner Section -->
+<section class="about-banner d-flex align-items-center justify-content-center text-white">
+    <div class="text-center">
+        <h1 class="display-4">Welcome to Net Pizzeria!</h1>
+        <p class="lead">Serving you 24/7 with delicious pizzas right at your fingertips. Order now via SMS!</p>
+    </div>
+</section>
+
+<!-- About Content Section -->
+<section class="about-content">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Welcome to **Net Pizzeria**, the only pizzeria open around the clock for your pizza cravings! We offer a wide range of delicious pizzas, available for ordering via SMS. You can place an order for just one type of pizza per SMS, making the process simple and fast.</p>
+
+        <p>We believe in serving our customers the highest quality pizza with no delays, and we pride ourselves on being the most accessible pizzeria at any time of day or night. Our goal is to make sure every customer enjoys their pizza experience with just a simple SMS order. Whether you're at home, at work, or on the go, **Net Pizzeria** is always ready to deliver your favorite pizza.</p>
+
+        <p>Our pizza offerings are made with the freshest ingredients, and each pizza is crafted with care. Join the **Net Pizzeria** family and enjoy our service anytime you’re hungry!</p>
+    </div>
+</section>
+
+<!-- Contact Information Section -->
+<section class="contact-info text-center py-5">
+    <div class="container">
+        <h3>Contact Us</h3>
+        <p>If you have any questions or need assistance, feel free to contact us at:</p>
+        <p>Email: muachifid@gmail.com</p>
+        <p>Phone: +36202343549</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2024 Net Pizzeria. All rights reserved. by Dijanira Muachifi</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0g9V+z+Phse3wTLO3Wz1z4h6rdY6uK5S5t60T0gM80L6GviD" crossorigin="anonymous"></script>
+</body>
+</html>

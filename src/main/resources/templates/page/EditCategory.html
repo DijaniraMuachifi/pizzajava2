@@ -1,0 +1,9 @@
+<h2>Edit Category</h2>
+<form action="/categories/edit" method="post">
+  <input type="hidden" name="cname" th:value="${category.cname}">
+  <div class="form-group">
+    <label for="price">Price</label>
+    <input type="number" class="form-control" id="price" name="price" step="0.01" th:value="${category.price}" required>
+  </div>
+  <button type="submit" class="btn btn-warning mt-3">Update Category</button>
+</form>
